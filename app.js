@@ -11,9 +11,10 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 L.marker([49.003008, 12.098255], {icon: greenIcon}).addTo(map)
     .bindPopup(samplePopup)
 
-$.getJSON('http://gonnago.connecta-regensburg.org/marker.json', function (data) {
+$.getJSON('marker.json', function (data) {
     for (var i = 0; i < data.marker.length; i++){
         console.log(data.marker[i].name);
+        L.marker(data.marker[i].coordinates, {icon: blackIcon}).addTo(map);
     }
 });
 

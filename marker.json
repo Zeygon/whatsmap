@@ -1,7 +1,7 @@
 {
    "marker": [{
             "name": "Sax",
-            "coordinates": [],
+            "coordinates": [49.005, 12.097],
             "description": "Musikbar",
             "opening": "19:00 - 02:00",
             "phone": "",
@@ -12,7 +12,7 @@
         },
         {
             "name": "Beats",
-            "coordinates": [],
+            "coordinates": [49.001, 12.096],
             "description": "",
             "opening": "",
             "phone": "",

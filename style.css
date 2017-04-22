@@ -1,28 +1,63 @@
 body {
-  height: 100vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0!important;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0!important;
 }
 
-#map{
-  height: 100%;
-  width: 100%;
+#map {
+    height: 100%;
+    width: 100%;
 }
 
-#search{
+#search {
+  background: rgba(0, 0, 0, 0.8);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1001;
+display: none;
+}
+
+.search--inner {
+  width: 80%;
   margin: 0 auto;
-  top: 200px;
-  position: fixed;
-  width: 100%;
-  height: 300px;
-  background: #000000;
-  opacity: 0.5;
+  padding: 5% 10%;
+  color: #FFF;
+}
+.search--more{
+  text-align: center;
+}
+.search--more > button{
+  color: #fff;
+  background: rgba(0,0,0,0.2);
+  margin: 0 10px;
+
+}
+#input{
+  background: transparent;
+    border: none;
+    text-align: center;
+    letter-spacing: -3px;
+    font-size: 80px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    padding: 0;
+    height: auto;
 }
 
-#fab{
-  position: fixed;
-  bottom:  50px;
-  right: 50px;
-  z-index: 4000;
+#input:focus, #input:hover{
+  border: none !important;
+    outline: none;
+}
+#fab {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 4000;
 }

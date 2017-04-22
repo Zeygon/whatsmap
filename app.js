@@ -8,9 +8,8 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([49.003008, 12.098255]).addTo(map)
+L.marker([49.003008, 12.098255], {icon: greenIcon}).addTo(map)
     .bindPopup(samplePopup)
-    .openPopup();
 
 
 

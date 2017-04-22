@@ -5,7 +5,6 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-
 $.getJSON('marker.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         var marker_content = '<h4 class="center" style="margin:0;">' + data.marker[i].name + '</h4><br><b>' + data.marker[i].opening + '</b><br>' + data.marker[i].description + "<br><p>";
@@ -13,9 +12,10 @@ $.getJSON('marker.json', function (data) {
             marker_content += '<span class="uppercase white-text badge ' + get_color(data.marker[i].tags[tag_count]) + '">';
             marker_content += data.marker[i].tags[tag_count] + "</span>";
         }
-        marker_content += '</p><p style="margin-top:48px;font-weight:600;"><hr><strong>Tel.: </strong>' + data.marker[i].phone + '<br><strong>Url: </strong>' + data.marker[i].url + '<br><strong>Email: </strong>' + data.marker[i].email + '</p>';
+        marker_content += '</p><i class="material-icons tiny" style="vertical-align: middle;">phone</i>' + data.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i>' + data.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i>' + data.marker[i].email + '';
         var point = L.marker(data.marker[i].coordinates, { icon: blackIcon }).bindPopup(marker_content);
         all_points.addLayer(point);
+
     }
 
     all_points.addTo(map);
@@ -49,6 +49,34 @@ function get_color(tag) {
             return 'black';
     }
 }
+
+//Animations with jQuery
+var $searchOverlay = $('#search');
+var $searchTrigger = $('#fab');
+var $search = $('#input');
+var $fabi = $('#fab--i');
+
+var b = false;
+$searchTrigger.click(function(e) {
+    if (b) {
+        $searchOverlay.fadeOut(500);
+        setTimeout(function() {}, 500);
+        $fabi.text("search");
+
+        b = false;
+    } else {
+
+        $searchOverlay.fadeIn(500);
+        setTimeout(function() {
+            $search.focus();
+        }, 500);
+        $fabi.text("arrow_back");
+
+        b = true;
+    }
+
+});
+
 
 var rangeSlider = function() {
     var slider = $('#range--div'),
@@ -88,4 +116,3 @@ var rangeSlider = function() {
 };
 
 rangeSlider();
-

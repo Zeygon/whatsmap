@@ -2,8 +2,13 @@
    "marker": [
         {
             "name": "three past eight - comedy night",
+            "date": "thursday 04-27-2017"
+            "time": "8:03 pm"
+            "opening": ""
             "coordinates": [50.768611,6.086595],
             "description": "Music cabaret artists present you the whole musical history.",
+            "location": "Franz Bühne Saal Café",
+            "adress": "Franzstraße 74, 52064 Aachen"
             "phone": "",
             "email": "",
             "url": "www.franz-aachen.de",
@@ -11,6 +16,37 @@
             "color": "",
             "typ": "event"
         },
-        {}
+        { 
+            "name": "Uni Opening",
+            "date": "tuesday 04-25-2017"
+            "time": "11 pm - 3 am"
+            "opening": ""
+            "coordinates": [49.016060,12.096698],
+            "description": "home is where your heart beats…Welcome to town to all new students.- open: 23 – 03 h, - beats by mack, - first 50 shots for free, - kneitinger beats pils 2,50, - prosecco ice 3,00",
+            "location": "Beats Club"
+            "adress": "St.-Peters-Weg 15, 93047 Regensburg"
+            "phone": "",
+            "email": "info@beats-club.de",
+            "url": "www.beats-club.de",
+            "tags": ["#escalation", "#party", "#music"],
+            "color": "",
+            "typ": "event"
+        },
+        { 
+            "name": "Uni Opening",
+            "date": "tuesday 04-25-2017"
+            "time": "11 pm - 3 am"
+            "opening": ""
+            "coordinates": [49.016060,12.096698],
+            "description": "home is where your heart beats…Welcome to town to all new students.- open: 23 – 03 h, - beats by mack, - first 50 shots for free, - kneitinger beats pils 2,50, - prosecco ice 3,00",
+            "location": "Beats Club"
+            "adress": "St.-Peters-Weg 15, 93047 Regensburg"
+            "phone": "",
+            "email": "info@beats-club.de",
+            "url": "www.beats-club.de",
+            "tags": ["#escalation", "#party", "#music"],
+            "color": "",
+            "typ": "event"     
     ]
 }
+

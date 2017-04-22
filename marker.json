@@ -1,0 +1,25 @@
+{
+   "marker": [{
+            "name": "Sax",
+            "coordinates": [],
+            "description": "Musikbar",
+            "opening": "19:00 - 02:00",
+            "phone": "",
+            "email": "musikbar.sax@gmail.com",
+            "url": "",
+            "tags": [],
+            "color": ""
+        },
+        {
+            "name": "Beats",
+            "coordinates": [],
+            "description": "",
+            "opening": "",
+            "phone": "",
+            "email": "",
+            "url": "",
+            "tags": [],
+            "color": ""
+        }
+    ]
+}

@@ -11,6 +11,11 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 L.marker([49.003008, 12.098255], {icon: greenIcon}).addTo(map)
     .bindPopup(samplePopup)
 
+$.getJSON('http://gonnago.connecta-regensburg.org/marker.json', function (data) {
+    for (var i = 0; i < data.marker.length; i++){
+        console.log(data.marker[i].name);
+    }
+});
 
 
 //Animations with jQuery
@@ -20,17 +25,17 @@ var $search = $('#input');
 var $fabi = $('#fab--i');
 
 var b = false;
-$searchTrigger.click(function(e) {
+$searchTrigger.click(function (e) {
     if (b) {
         $searchOverlay.fadeOut(500);
-        setTimeout(function() {}, 500);
+        setTimeout(function () { }, 500);
         $fabi.text("search");
 
         b = false;
     } else {
 
         $searchOverlay.fadeIn(500);
-        setTimeout(function() {
+        setTimeout(function () {
             $search.focus();
         }, 500);
         $fabi.text("arrow_back");
@@ -39,3 +44,7 @@ $searchTrigger.click(function(e) {
     }
 
 });
+
+
+
+var data = [];

@@ -14,13 +14,25 @@ L.marker([49.003008, 12.098255]).addTo(map)
 var $searchOverlay = $('#search');
 var $searchTrigger = $('#fab');
 var $search = $('#input');
+var $fabi = $('#fab--i');
 
-
+var b = false;
 $searchTrigger.click(function(e) {
-    $searchOverlay.fadeIn(500);
-    $search.focus();
-});
+    if (b) {
+        $searchOverlay.fadeOut(500);
+        setTimeout(function() {}, 500);
+        $fabi.text("search");
 
-$searchOverlay.find('.fa-times').click(function(e) {
-    $searchOverlay.fadeOut(500);
+        b = false;
+    } else {
+
+        $searchOverlay.fadeIn(500);
+        setTimeout(function() {
+            $search.focus();
+        }, 500);
+        $fabi.text("arrow_back");
+
+        b = true;
+    }
+
 });

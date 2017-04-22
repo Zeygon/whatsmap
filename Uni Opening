@@ -26,3 +26,49 @@ tags [
 “name”: “#music””,
 “colour”: “yellow””,
 }];
+
+NEXT
+
+var locations = [
+{
+“name” : “LaserTag Regensburg”“,
+“coordinates” : [48.996385,12.120117],
+“description” : 
+“Have fun playing LaserTag on 450 m². LASER TAG is probably the most exciting live game that simulates an actual battlefield. n a more technical definition, LASER TAG is a team or individual activity that involves the use of hand-held infrared-emitting targeting device. So this means no pain as targeting or shooting is done via light or simply put, laser.
+Make sure to call us before your visit so that you can book it.“”,
+“location”: “LaserTag Regensburg””
+“address”: “Bajuwarenring 7, 93053 Regensburg””
+“opening” : 10 – 00 h “”,
+“phone” : “0941 38162512””,
+“email” : “info@lasertag-regensburg.de “”,
+“url” :” lasertag-deutschland.com “”,
+“tags” : [“#escalate”,”#action”,”#sport”],
+“color” : “blue””,
+}];
+
+Tags [
+{
+“name”: “escalate””,
+“colour”: “blue””,
+“name”: “action””,
+“colour”: “green””,
+“name”: “sport””,
+“colour”: “grey””,
+
+NEXT
+
+var locations = [
+{
+“name” : “Sailplane”,
+“coordinates” : [48°57'04.9"N 12°08'52.4"E],
+“description” : You want to fly over Regensburg with a sailplane?
+Contact us per mail. ,
+“opening” : “saturday, sunday 09 - 18 h “”,
+“phone” : “094537244”,
+“email” : “mitflug@luftsportverein-regensburg.de”,
+“url” :” “http://www.luftsportverein-regensburg.de/mitflug/ “”,
+“tags” : [“#action”,”#adventure”,”#sport”],
+Action: green
+Adventure: black
+Sport: grey
+}];

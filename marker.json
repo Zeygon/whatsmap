@@ -4,22 +4,24 @@
             "coordinates": [49.005, 12.097],
             "description": "Musikbar",
             "opening": "19:00 - 02:00",
-            "phone": "",
+            "phone": "012456114555",
             "email": "musikbar.sax@gmail.com",
-            "url": "",
-            "tags": [],
-            "color": ""
+            "url": "swagium.com",
+            "tags": ["#escalate"],
+            "color": "",
+            "typ": "activity"
         },
         {
             "name": "Beats",
             "coordinates": [49.001, 12.096],
-            "description": "",
-            "opening": "",
-            "phone": "",
-            "email": "",
-            "url": "",
-            "tags": [],
-            "color": ""
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ",
+            "opening": "19:00 - 02:00",
+            "phone": "012541555441",
+            "email": "ingo@info.de",
+            "url": "swagium.com",
+            "tags": ["#party", "#music"],
+            "color": "",
+            "typ": "event"
         }
     ]
 }

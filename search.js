@@ -3,6 +3,7 @@ var $searchOverlay = $('#search');
 var $searchTrigger = $('#fab');
 var $search = $('#input');
 var $fabi = $('#fab--i');
+var $input = $('#input');
 
 var b = false;
 $searchTrigger.click(function (e) {
@@ -23,3 +24,15 @@ $searchTrigger.click(function (e) {
     }
 
 });
+
+$input.keypress(function(e) {
+    //enter key
+    if(e.which == 13) {
+        var search_string = $input.val();
+        alert(search_string);
+    }
+});
+
+function searchPoints() {
+
+};

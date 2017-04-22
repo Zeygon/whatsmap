@@ -15,7 +15,6 @@ $.getJSON('marker.json', function (data) {
         marker_content += '</p><i class="material-icons tiny" style="vertical-align: middle;">phone</i>' + data.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i>' + data.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i>' + data.marker[i].email + '';
         var point = L.marker(data.marker[i].coordinates, { icon: blackIcon }).bindPopup(marker_content);
         all_points.addLayer(point);
-
     }
 
     all_points.addTo(map);

@@ -1,6 +1,7 @@
 var locations = [
 {
 “name” : “Uni Opening”,
+Date: Tuesday 04-25-2017
 “coordinates” : [49.016060,12.096698],
 “description” : home is where your heart beats…Welcome to town to all new students.- open: 23 – 03 h, - beats by mack, - first 50 shots for free, - kneitinger beats pils 2,50, - prosecco ice 3,00“”,
 “location”: “Beats Club””,
@@ -38,7 +39,7 @@ var locations = [
 Make sure to call us before your visit so that you can book it.“”,
 “location”: “LaserTag Regensburg””
 “address”: “Bajuwarenring 7, 93053 Regensburg””
-“opening” : 10 – 00 h “”,
+“opening” : 10 – 00 h täglich “”,
 “phone” : “0941 38162512””,
 “email” : “info@lasertag-regensburg.de “”,
 “url” :” lasertag-deutschland.com “”,

@@ -1,40 +1,25 @@
 {
-  "test": [
-    {
-      "name": "Georg",
-      "alter": 47,
-      "verheiratet": false,
-      "beruf": null,
-      "kinder": [
-        {
-          "name": "Lukas",
-          "alter": 19,
-          "schulabschluss": "Realschule"
+   "marker": [{
+            "name": "Sax",
+            "coordinates": [],
+            "description": "Musikbar",
+            "opening": "19:00 - 02:00",
+            "phone": "",
+            "email": "musikbar.sax@gmail.com",
+            "url": "",
+            "tags": [],
+            "color": ""
         },
         {
-          "name": "Lisa",
-          "alter": 14,
-          "schulabschluss": null
+            "name": "Beats",
+            "coordinates": [],
+            "description": "",
+            "opening": "",
+            "phone": "",
+            "email": "",
+            "url": "",
+            "tags": [],
+            "color": ""
         }
-      ]
-    },
-    {
-      "name": "Thomas",
-      "alter": 47,
-      "verheiratet": false,
-      "beruf": null,
-      "kinder": [
-        {
-          "name": "Lukas",
-          "alter": 19,
-          "schulabschluss": "Realschule"
-        },
-        {
-          "name": "Lisa",
-          "alter": 14,
-          "schulabschluss": null
-        }
-      ]
-    }
-  ]
+    ]
 }

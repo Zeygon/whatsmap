@@ -13,9 +13,8 @@ L.marker([49.003008, 12.098255]).addTo(map)
     .openPopup();
 
 $.getJSON('http://gonnago.connecta-regensburg.org/marker.json', function (data) {
-    var marker = JSON.parse(data);
-    for (i in marker.test) {
-        console.log(i.name);
+    for (var i = 0; i < data.marker.length; i++){
+        console.log(data.marker[i].name);
     }
 });
 

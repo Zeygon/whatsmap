@@ -73,3 +73,7 @@ body {
     right: 40px;
     z-index: 4000;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}

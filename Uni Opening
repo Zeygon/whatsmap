@@ -1,0 +1,28 @@
+var locations = [
+{
+“name” : “Uni Opening”,
+“coordinates” : [49.016060,12.096698],
+“description” : home is where your heart beats…Welcome to town to all new students.- open: 23 – 03 h, - beats by mack, - first 50 shots for free, - kneitinger beats pils 2,50, - prosecco ice 3,00“”,
+“location”: “Beats Club””,
+“address”: “St.-Peters-Weg 15, 93047 Regensburg””,
+“opening” : “23 – 03 h “”,
+“phone” : “”,
+“email” : "info@beats-club.de“”,
+“url” : "www.beats-club.de“”,
+“tags” : [“#escalate”,”#party”,”#music”],
+“color” : “violett””,
+}];
+tags [
+{
+“name”: “#escalate””,
+“colour”: “blue””,
+}];
+tags [
+{
+“name”: “#party””,
+“colour”: “red””,
+}];
+tags [
+“name”: “#music””,
+“colour”: “yellow””,
+}];

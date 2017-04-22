@@ -61,7 +61,7 @@ NEXT
 var locations = [
 {
 “name” : “Sailplane”,
-“coordinates” : [48°57'04.9"N 12°08'52.4"E],
+“coordinates” : [49.054912,12.076534],
 “description” : You want to fly over Regensburg with a sailplane?
 Contact us per mail. ,
 “opening” : “saturday, sunday 09 - 18 h “”,

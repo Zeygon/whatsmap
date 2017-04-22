@@ -8,7 +8,6 @@ var b = false;
 $searchTrigger.click(function (e) {
     if (b) {
         $searchOverlay.fadeOut(500);
-        setTimeout(function () { }, 500);
         $fabi.text("search");
         b = false;
     } else {

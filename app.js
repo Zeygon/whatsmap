@@ -14,7 +14,7 @@ L.marker([49.003008, 12.098255], {icon: greenIcon}).addTo(map)
 $.getJSON('marker.json', function (data) {
     for (var i = 0; i < data.marker.length; i++){
         console.log(data.marker[i].name);
-        var p = '<h4 class="center" style="margin:0;">' + data.marker[i].name + '</h4><br><b>' + data.marker[i].openings + '</b><br>' + data.marker[i].description + '<br><p><span class="white-text badge red">#PARTY</span><span class="white-text badge blue">#SWAG</span></p><p style="margin-top:48px;font-weight:600;">' + data.marker[i].phone + ' &bull; ' + data.marker[i].url + ' &bull; ' + data.marker[i].email + '</p>';
+        var p = '<h4 class="center" style="margin:0;">' + data.marker[i].name + '</h4><br><b>' + data.marker[i].opening + '</b><br>' + data.marker[i].description + '<br><p><span class="white-text badge red">#PARTY</span><span class="white-text badge blue">#SWAG</span></p><p style="margin-top:48px;font-weight:600;">' + data.marker[i].phone + ' &bull; ' + data.marker[i].url + ' &bull; ' + data.marker[i].email + '</p>';
         L.marker(data.marker[i].coordinates, {icon: blackIcon}).addTo(map).bindPopup(p);
 
     }

@@ -50,3 +50,42 @@ function get_color(tag) {
     }
 }
 
+var rangeSlider = function() {
+    var slider = $('#range--div'),
+        range = $('#range'),
+        value = $('#range--value');
+
+    slider.each(function() {
+
+        value.each(function() {
+            var value = $(this).prev().attr('value');
+            if (value === "23") {
+                $(this).html("HEUTE");
+
+            } else if (value === "24") {
+                $(this).html("MORGEN");
+
+            } else {
+
+                $(this).html(value + ". April");
+            }
+        });
+
+        range.on('input', function() {
+            if (this.value === "23") {
+                $(this).next(value).html("HEUTE");
+
+            } else if (this.value === "24") {
+                $(this).next(value).html("MORGEN");
+
+            } else {
+
+                $(this).next(value).html(this.value + ". April");
+            }
+
+        });
+    });
+};
+
+rangeSlider();
+

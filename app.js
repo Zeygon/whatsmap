@@ -8,21 +8,7 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-<<<<<<< HEAD
-L.marker([49.003008, 12.098255], {
-        icon: greenIcon
-    }).addTo(map)
-    .bindPopup(samplePopup)
 
-$.getJSON('marker.json', function(data) {
-    for (var i = 0; i < data.marker.length; i++) {
-        console.log(data.marker[i].name);
-        var p = '<h4 class="center" style="margin:0;">' + data.marker[i].name + '</h4><br><b>' + data.marker[i].opening + '</b><br>' + data.marker[i].description + '<br><p><span class="white-text badge red">#PARTY</span><span class="white-text badge blue">#SWAG</span></p><p style="margin-top:48px;font-weight:600;">' + data.marker[i].phone + ' &bull; ' + data.marker[i].url + ' &bull; ' + data.marker[i].email + '</p>';
-        L.marker(data.marker[i].coordinates, {
-            icon: blackIcon
-        }).addTo(map).bindPopup(p);
-
-=======
 L.marker([49.003008, 12.098255], { icon: greenIcon }).addTo(map)
     .bindPopup(samplePopup)
 
@@ -33,9 +19,9 @@ $.getJSON('marker.json', function (data) {
             marker_content += '<span class="uppercase white-text badge ' + get_color(data.marker[i].tags[tag_count]) + '">';
             marker_content += data.marker[i].tags[tag_count] + "</span>";
         }
-        marker_content += '</p><p style="margin-top:48px;font-weight:600;"><hr><strong>Tel.:</strong>' + data.marker[i].phone + '<br><strong>Url:</strong>' + data.marker[i].url + '<br><strong>Email:</strong>' + data.marker[i].email + '</p>';
+        marker_content += '</p><i class="material-icons tiny" style="vertical-align: middle;">phone</i>' + data.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i>' + data.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i>' + data.marker[i].email + '';
         L.marker(data.marker[i].coordinates, { icon: blackIcon }).addTo(map).bindPopup(marker_content);
->>>>>>> cc735e93483a6aad79f31f3a7b238c4185542302
+
     }
 });
 
@@ -84,8 +70,6 @@ $searchTrigger.click(function(e) {
 
 });
 
-<<<<<<< HEAD
-
 
 
 
@@ -127,5 +111,3 @@ var rangeSlider = function() {
 };
 
 rangeSlider();
-=======
->>>>>>> cc735e93483a6aad79f31f3a7b238c4185542302

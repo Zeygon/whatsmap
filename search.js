@@ -11,7 +11,6 @@ var b = false;
 $searchTrigger.click(function (e) {
     if (b) {
         $searchOverlay.fadeOut(500);
-        setTimeout(function () { }, 500);
         $fabi.text("search");
         b = false;
     } else {
@@ -50,5 +49,4 @@ function searchPoints(searchString) {
             var point = L.marker(data.marker[i].coordinates, { icon: blackIcon }).bindPopup(marker_content);
             search_points.addLayer(point);
         }
-    }
-};
+    }};

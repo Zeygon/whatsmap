@@ -63,7 +63,7 @@ var greyIcon = new L.Icon({
 
 var blackIcon = new L.Icon({
 	iconUrl: 'img/marker-icon-2x-black.png',
-
+	
 	iconSize: [25, 41],
 	iconAnchor: [12, 41],
 	popupAnchor: [1, -34],

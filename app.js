@@ -8,6 +8,12 @@ L.marker([49.003008, 12.098255]).addTo(map)
     .bindPopup('<b>Your</b> Location')
     .openPopup();
 
+$.getJSON('http://gonnago.connecta-regensburg.org/marker.json', function (data) {
+    var marker = JSON.parse(data);
+    for (i in marker.test) {
+        console.log(i.name);
+    }
+});
 
 
 //Animations with jQuery
@@ -17,17 +23,17 @@ var $search = $('#input');
 var $fabi = $('#fab--i');
 
 var b = false;
-$searchTrigger.click(function(e) {
+$searchTrigger.click(function (e) {
     if (b) {
         $searchOverlay.fadeOut(500);
-        setTimeout(function() {}, 500);
+        setTimeout(function () { }, 500);
         $fabi.text("search");
 
         b = false;
     } else {
 
         $searchOverlay.fadeIn(500);
-        setTimeout(function() {
+        setTimeout(function () {
             $search.focus();
         }, 500);
         $fabi.text("arrow_back");
@@ -36,3 +42,7 @@ $searchTrigger.click(function(e) {
     }
 
 });
+
+
+
+var data = [];

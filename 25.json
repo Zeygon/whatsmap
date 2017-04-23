@@ -52,11 +52,11 @@
         },
         {
             "name" : "Indoor Climbing Wall",
-            "opening" : "Mo: 10.00am - 11.00pm, Tue: 10.00am - 11.00pm, We: 10.00 - 11.00pm, Thu: 09.00 - 11.00, Fr: 10.00am - 11.00pm, Sa+So: 10.00am - 10.00pm",
+            "opening" : "Monday to Wednesday &bull; 10.00 AM - 11.00 PM | Thursday &bull; 9.00 AM - 11.00 PM | Friday &bull; 10.00am - 11.00pm | Saturday to Sunday &bull: 10.00 AM - 10.00 PM",
             "coordinates" : [49.042653, 12.086079],
             "description" : "The DAV Kletterzentrum Regensburg offers around ca. 2300 sq m climbing space in total (1.400 sq m indoor & 900 sq m outdoors), climbing-routes from 3rd to 10th skilllevel and wall-height of 14,50m",
             "address" : "Am Silbergarten 6, 93138 Lappersdorf/Kareth",
-            "phone" : "0941/28005085",
+            "phone" : "0941 28005085",
             "email" : "service@kletterzentrum-regensburg.de",
             "url" : "http://www.kletterzentrum-regensburg.de/",
             "tags" : ["#sport"],

@@ -13,7 +13,7 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
 }).addTo(map);
 
 //own point
-L.marker([49.00316, 12.09751]).addTo(map);
+L.marker([49.00316, 12.09751],{ icon: headIcon }).addTo(map);
 
 $.getJSON('23.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {

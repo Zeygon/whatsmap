@@ -34,7 +34,7 @@ $searchReset.click(function (e) {
     $fabi.text("search");
     b = false;
     all_points.addTo(map);
-    map.setView([49.003008, 12.098255], 13);
+    map.setView([49.003008, 12.098255], 13);50.76,6.1
 });
 
 $input.keypress(function (e) {
@@ -49,6 +49,7 @@ $.getJSON('marker.json', function (data) {
 });
 
 function searchPoints(searchString) {
+    search_points = L.layerGroup();
     for (var i = 0; i < allPoints.marker.length; i++) {
         for (var tagCount = 0; tagCount < allPoints.marker[i].tags.length; tagCount++) {
             if (searchString.includes(allPoints.marker[i].tags[tagCount])) {
@@ -64,6 +65,10 @@ function searchPoints(searchString) {
             }
         }
     }
+    if(searchString.includes('aachen')) {
+        map.setView([50.776,6.082], 15);
+    }
+
     map.removeLayer(all_points);
     $searchOverlay.fadeOut(500);
     $fabi.text("search");

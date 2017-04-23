@@ -9,7 +9,7 @@
             "phone": "0941 9431101",
             "email": "",
             "url": "www.hackaburg.de",
-            "tags": ["#adventure", "#education", "#socially"],
+            "tags": ["#education", "#socially"],
             "color": "",
             "typ": "event"
         },
@@ -35,7 +35,7 @@
             "phone": "094537244",
             "email": "mitflug@luftsportverein-regensburg.de",
             "url": "www.luftsportverein-regensburg.de",
-            "tags": ["#escalation", "#adventure", "#sport"],
+            "tags": ["#adventure", "#sport"],
             "color": "",
             "typ": "activity" 
         },
@@ -48,7 +48,7 @@
             "phone": "0941 5073443",
             "email": "info@nmo-regensburg.de",
             "url": "www.nmo-regensburg.de",
-            "tags": ["#kids", "#adventure", "#nature"],
+            "tags": ["#kids", "#nature"],
             "color": "",
             "typ": "activity"     
         },
@@ -60,7 +60,7 @@
             "phone": "0241 182740",
             "email": "mail@carolus-thermen.de",
             "url": " www.carolus-thermen.de",
-            "tags": ["#adventure", "#sport","#chilling"],
+            "tags": ["#sport","#chilling"],
             "color": "",
             "typ": "event"
         }

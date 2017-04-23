@@ -64,7 +64,7 @@ function createPoint(marker) {
         marker_content += '<span class="uppercase white-text badge ' + get_color(marker.tags[tag_count]) + '">';
         marker_content += marker.tags[tag_count] + "</span>";
     }
-    marker_content += '</p><hr style="margin-top:40px;visibility:hidden;"><i class="material-icons tiny" style="vertical-align: middle;">phone</i> ' + marker.phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i> ' + marker.url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i> ' + marker.email;
+    marker_content += '</p><br><br><i class="material-icons tiny" style="vertical-align: middle;">phone</i> ' + marker.phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i> ' + marker.url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i> ' + marker.email;
     if (marker.typ === "event") {
         var point = L.marker(marker.coordinates, { icon: greenIcon }).bindPopup(marker_content);
     } else {
@@ -122,9 +122,6 @@ function get_color(tag) {
             return 'black';
     }
 }
-
-
-
 
 var rangeSlider = function () {
     var slider = $('#range--div'),

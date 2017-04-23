@@ -22,6 +22,66 @@
             "tags": ["#party", "#music"],
             "color": "",
             "typ": "event"
+        },
+        {
+            "name": "Talk about national security",
+            "coordinates": [50.764424, 6.080619],
+            "description": "How resistent is our infrastructure against terrorist attacks, cyber attacks and other risks? Taking part is for free. Register: www.cubos-internet.de/symposium",
+            "opening": "27. April &bull; 2.00 PM",
+            "phone": "0241 56114555",
+            "email": "talk@fhaachen.de",
+            "url": "fhaachen.de",
+            "tags": ["#talk","#lecture"],
+            "color": "",
+            "typ": "activity"
+        },
+        {
+            "name": "Carolus Thermen",
+            "coordinates": [50.78309,6.09693],
+            "description": "The Carolus Thermen Bad Aachen with their four worlds of relaxation offer unique possibilities of letting yourself go for a few hours.",
+            "opening": "Daily &bull; 9.00 AM to 11.00 PM",
+            "phone": "0241 182740",
+            "email": "mail@carolus-thermen.de",
+            "url": " www.carolus-thermen.de",
+            "tags": ["#adventure", "#sport","#chilling"],
+            "color": "",
+            "typ": "event"
+        },
+        {
+            "name": "Eine Sommernacht",
+            "coordinates": [50.7899205, 6.1123358],
+            "description": "Performance of a summernight @ Das Da Theather Aachen by David Greig and Gordon McIntyre. Regular: 24.50€, reduced: 16€.",
+            "opening": "27. April &bull; 8.00 PM",
+            "phone": "0241 161688",
+            "email": "theather@dasda.de",
+            "url": " www.dasda.de",
+            "tags": ["#social", "#escalation","#entertainment"],
+            "color": "",
+            "typ": "event"
+        },
+        {
+            "name": "Biology Springparty",
+            "coordinates": [50.77621,6.09056],
+            "description": "Springparty of the faculty of Biology at the NOX Club. Celebrating the end of exams. Entrance: 5€ and free shots",
+            "opening": "27. April &bull; 11.00 PM to 5.00 AM",
+            "phone": "0241 26304",
+            "email": "info@2n8-events.de",
+            "url": " www.2n8-events.de",
+            "tags": ["#party", "#escalation"],
+            "color": "",
+            "typ": "event"
+        },
+        {
+            "name": "Guardians of the Galaxy Vol. 2",
+            "coordinates": [50.77142,6.08699],
+            "description": "The new Marvel Hit is hitting theaters this thursday with stunning visual effect and the awesome music of mixtape #2",
+            "opening": "27. April &bull; 19.15 PM and 10.00 PM",
+            "phone": "0241 26304",
+            "email": "info@cineplex.de",
+            "url": " www.cineplex.de",
+            "tags": ["#entertainment", "#escalation"],
+            "color": "",
+            "typ": "event"
         }
     ]
 }

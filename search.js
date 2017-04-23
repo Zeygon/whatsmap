@@ -34,7 +34,7 @@ $searchReset.click(function (e) {
     $fabi.text("search");
     b = false;
     all_points.addTo(map);
-    map.setView([49.003008, 12.098255], 13);50.76,6.1
+    map.setView([49.003008, 12.098255], 13); 50.76, 6.1
 });
 
 $input.keypress(function (e) {
@@ -50,6 +50,7 @@ $.getJSON('marker.json', function (data) {
 
 function searchPoints(searchString) {
     search_points = L.layerGroup();
+    var searchCount = 0;
     for (var i = 0; i < allPoints.marker.length; i++) {
         for (var tagCount = 0; tagCount < allPoints.marker[i].tags.length; tagCount++) {
             if (searchString.includes(allPoints.marker[i].tags[tagCount])) {
@@ -61,12 +62,20 @@ function searchPoints(searchString) {
                 marker_content += '</p><i class="material-icons tiny" style="vertical-align: middle;">phone</i>' + allPoints.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i>' + allPoints.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i>' + allPoints.marker[i].email + '';
                 var point = L.marker(allPoints.marker[i].coordinates, { icon: blackIcon }).bindPopup(marker_content);
                 search_points.addLayer(point);
+                searchCount++;
                 break;
             }
         }
     }
-    if(searchString.includes('aachen')) {
-        map.setView([50.776,6.082], 15);
+
+    if (searchString.includes('aachen')) {
+        map.setView([50.776, 6.082], 13);
+        if (searchCount == 0) {
+            $searchOverlay.fadeOut(500);
+            $fabi.text("search");
+            b = false;
+            return;
+        }
     }
 
     map.removeLayer(all_points);

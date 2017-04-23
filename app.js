@@ -13,7 +13,12 @@ $.getJSON('marker.json', function (data) {
             marker_content += data.marker[i].tags[tag_count] + "</span>";
         }
         marker_content += '</p><hr style="margin-top:40px;visibility:hidden;"><i class="material-icons tiny" style="vertical-align: middle;">phone</i> ' + data.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i> ' + data.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i> ' + data.marker[i].email;
-        var point = L.marker(data.marker[i].coordinates, { icon: blackIcon }).bindPopup(marker_content);
+        if (data.marker[i].typ === "event") {
+          var point = L.marker(data.marker[i].coordinates, { icon: greenIcon }).bindPopup(marker_content);
+        } else{
+          var point = L.marker(data.marker[i].coordinates, { icon: redIcon }).bindPopup(marker_content);
+        }
+
         all_points.addLayer(point);
     }
 
@@ -90,3 +95,18 @@ var rangeSlider = function() {
 };
 
 rangeSlider();
+
+
+map.locate();
+
+function onLocationFound(e) {
+    L.marker(e.latlng).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+
+function onLocationError(e) {
+    console.log(e.message);
+}
+
+map.on('locationerror', onLocationError);

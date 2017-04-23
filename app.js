@@ -164,6 +164,5 @@ rangeSlider();
 
 $('#brand').fadeIn(300);
 setTimeout(function(){
-  console.log("swag in rollin' around");
   $('#loader').fadeOut(500);
 },1500);

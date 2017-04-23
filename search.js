@@ -6,7 +6,8 @@ var $search = $('#input');
 var $fabi = $('#fab--i');
 var $input = $('#input');
 var $rangeslider = $('#range');
-var currentDay = 23;
+var $btnMore = $('btn-more');
+var currentDay = "23";
 
 var search_points = L.layerGroup();
 //var allPoints;
@@ -81,10 +82,10 @@ $searchTrigger.click(function (e) {
 });
 
 $searchReset.click(function (e) {
-    resetMap();
     getCorrectLayer(currentDay);
     $searchOverlay.fadeOut(500);
     $fabi.text("search");
+    $input.val("");
     b = false;
     map.setView([49.003008, 12.098255], 13);
 });

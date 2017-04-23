@@ -1,0 +1,30 @@
+{
+   "marker": [
+        {
+            "name": "Hackaburg 2017",
+            "opening": "04-21-2017, 3 pm - 04.23.2017, 5 pm",
+            "coordinates": [49.003514,12.095027],
+            "description": "Pitch your idea at first. Create a team. Hack!",
+            "address": "Seybothstraße 2",
+            "phone": "0941 9431101",
+            "email": "",
+            "url": "www.hackaburg.de",
+            "tags": ["#adventure", "#education", "#socially"],
+            "color": "",
+            "typ": "event"
+        },
+        { 
+            "name": "Ohrange",
+            "opening": "thursday 04-27-2017, 8 pm",
+            "coordinates": [49.020314,12.100412],
+            "description": "Two people playing german and bavarian music. It will be fun!",
+            "address": "Unter den Schwibbögen 21",
+            "phone": "",
+            "email": "",
+            "url": "",
+            "tags": ["#escalation", "#party", "#music"],
+            "color": "",
+            "typ": "event"
+        },
+        ]
+        }

@@ -18,44 +18,44 @@ L.marker([49.00316, 12.09751]).addTo(map);
 $.getJSON('23.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         p23.addLayer(createPoint(data.marker[i]));
-    } 
+    }
     p23.addTo(map);
 });
 
 $.getJSON('24.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         p24.addLayer(createPoint(data.marker[i]));
-    } 
+    }
 });
 
 $.getJSON('25.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         p25.addLayer(createPoint(data.marker[i]));
-    } 
+    }
 });
 
 $.getJSON('26.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         p26.addLayer(createPoint(data.marker[i]));
-    } 
+    }
 });
 
 $.getJSON('27.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         p27.addLayer(createPoint(data.marker[i]));
-    } 
+    }
 });
 
 $.getJSON('28.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         p28.addLayer(createPoint(data.marker[i]));
-    } 
+    }
 });
 
 $.getJSON('29.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         p29.addLayer(createPoint(data.marker[i]));
-    } 
+    }
 });
 
 function createPoint(marker) {
@@ -161,3 +161,8 @@ var rangeSlider = function () {
 };
 
 rangeSlider();
+
+setTimeout(function(){
+  console.log("swag in rollin' around");
+  $('#loader').fadeOut(500);
+},1000);

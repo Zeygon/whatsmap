@@ -6,15 +6,60 @@ var $search = $('#input');
 var $fabi = $('#fab--i');
 var $input = $('#input');
 var $rangeslider = $('#range');
+var currentDay = 23;
 
 var search_points = L.layerGroup();
-var allPoints;
+//var allPoints;
 
-$rangeslider.on("change", function() {
-    for(var i=0; allPoints.marker.length; i++) {
-        alert(allPoints.marker[i].name);
-    }
+$rangeslider.on("change", function () {
+    getCorrectLayer(this.value);
+    currentDay = this.value;
 });
+
+function getCorrectLayer(value) {
+    switch (value) {
+        case "23":
+            removeAllLayers();
+            p23.addTo(map);
+            break;
+        case "24":
+            removeAllLayers();
+            p24.addTo(map);
+            break;
+        case "25":
+            removeAllLayers();
+            p25.addTo(map);
+            break;
+        case "26":
+            removeAllLayers();
+            p26.addTo(map);
+            break;
+        case "27":
+            removeAllLayers();
+            p27.addTo(map);
+            break;
+        case "28":
+            removeAllLayers();
+            p28.addTo(map);
+            break;
+        case "29":
+            removeAllLayers();
+            p29.addTo(map);
+            break;
+        default:
+            break;
+    }
+}
+
+function removeAllLayers() {
+    map.removeLayer(p23);
+    map.removeLayer(p24);
+    map.removeLayer(p25);
+    map.removeLayer(p26);
+    map.removeLayer(p27);
+    map.removeLayer(p28);
+    map.removeLayer(p29);
+}
 
 var b = false;
 $searchTrigger.click(function (e) {
@@ -37,6 +82,7 @@ $searchTrigger.click(function (e) {
 
 $searchReset.click(function (e) {
     resetMap();
+    getCorrectLayer(currentDay);
     $searchOverlay.fadeOut(500);
     $fabi.text("search");
     b = false;
@@ -44,8 +90,7 @@ $searchReset.click(function (e) {
 });
 
 function resetMap() {
-    map.removeLayer(search_points);
-    all_points.addTo(map);
+    removeAllLayers();
 }
 
 $input.keypress(function (e) {
@@ -55,25 +100,19 @@ $input.keypress(function (e) {
     }
 });
 
-$.getJSON('marker.json', function (data) {
-    allPoints = data;
-});
-
 function searchPoints(searchString) {
+    map.removeLayer(search_points);
     search_points = L.layerGroup();
     var searchCount = 0;
+    var specificPoints= $.ajax({ 
+      url: currentDay + '.json', 
+      async: false
+   }).responseJSON;
     resetMap();
-    for (var i = 0; i < allPoints.marker.length; i++) {
-        for (var tagCount = 0; tagCount < allPoints.marker[i].tags.length; tagCount++) {
-            if (searchString.includes(allPoints.marker[i].tags[tagCount])) {
-                var marker_content = '<h4 class="center" style="margin:0;">' + allPoints.marker[i].name + '</h4><br><b>' + allPoints.marker[i].opening + '</b><br>' + allPoints.marker[i].description + "<br><p>";
-                for (var tag_count = 0; tag_count < allPoints.marker[i].tags.length; tag_count++) {
-                    marker_content += '<span class="uppercase white-text badge ' + get_color(allPoints.marker[i].tags[tag_count]) + '">';
-                    marker_content += allPoints.marker[i].tags[tag_count] + "</span>";
-                }
-                marker_content += '</p><hr style="margin-top:40px;visibility:hidden;"><i class="material-icons tiny" style="vertical-align: middle;">phone</i> ' + data.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i> ' + data.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i> ' + data.marker[i].email;
-                var point = L.marker(allPoints.marker[i].coordinates, { icon: blackIcon }).bindPopup(marker_content);
-                search_points.addLayer(point);
+    for (var i = 0; i < specificPoints.marker.length; i++) {
+        for (var tagCount = 0; tagCount < specificPoints.marker[i].tags.length; tagCount++) {
+            if (searchString.includes(specificPoints.marker[i].tags[tagCount])) {
+                search_points.addLayer(createPoint(specificPoints.marker[i]));
                 searchCount++;
                 break;
             }
@@ -89,8 +128,6 @@ function searchPoints(searchString) {
             return;
         }
     }
-
-    map.removeLayer(all_points);
     $searchOverlay.fadeOut(500);
     $fabi.text("search");
     b = false;

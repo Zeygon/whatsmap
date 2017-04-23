@@ -194,3 +194,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   z-index: 9000;
   background-color: #fff;
 }
+
+#brand{
+  display: none;
+  margin-top: 300px;
+}

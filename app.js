@@ -12,7 +12,7 @@ $.getJSON('marker.json', function (data) {
             marker_content += '<span class="uppercase white-text badge ' + get_color(data.marker[i].tags[tag_count]) + '">';
             marker_content += data.marker[i].tags[tag_count] + "</span>";
         }
-        marker_content += '</p><i class="material-icons tiny" style="vertical-align: middle;">phone</i>' + data.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i>' + data.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i>' + data.marker[i].email + '';
+        marker_content += '</p><hr style="margin-top:40px;visibility:hidden;"><i class="material-icons tiny" style="vertical-align: middle;">phone</i>' + data.marker[i].phone + '<br><i class="material-icons tiny"  style="vertical-align: middle;">public</i>' + data.marker[i].url + '<br><i class="material-icons tiny"  style="vertical-align: middle;">mail</i>' + data.marker[i].email + '';
         var point = L.marker(data.marker[i].coordinates, { icon: blackIcon }).bindPopup(marker_content);
         all_points.addLayer(point);
     }

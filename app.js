@@ -43,7 +43,7 @@ function get_color(tag) {
         case '#social':
             return 'navy';
         case '#talk':
-            return 'aqua';
+            return 'teal';
         default:
             return 'black';
     }

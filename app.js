@@ -5,6 +5,10 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+L.marker([49.00316,12.09751]).addTo(map);
+
+
+
 $.getJSON('marker.json', function (data) {
     for (var i = 0; i < data.marker.length; i++) {
         var marker_content = '<h4 class="center" style="margin:0;">' + data.marker[i].name + '</h4><br><b>' + data.marker[i].opening + ' &bull; '+ data.marker[i].address + '</b><br>' + data.marker[i].description + "<br><p>";
@@ -95,18 +99,3 @@ var rangeSlider = function() {
 };
 
 rangeSlider();
-
-
-map.locate();
-
-function onLocationFound(e) {
-    L.marker(e.latlng).addTo(map);
-}
-
-map.on('locationfound', onLocationFound);
-
-function onLocationError(e) {
-    console.log(e.message);
-}
-
-map.on('locationerror', onLocationError);

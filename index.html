@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src  *; style-src *; script-src *"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src  *; style-src *; script-src *" />
     <title>WhatsMap</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
@@ -15,23 +15,32 @@
 </head>
 
 <body>
-    <div id="map"></div>
-    <div id="search">
-        <div class="search--inner">
-            <input id="input" type="text" name="" placeholder="Search..." value="">
-            <div class="search--more">
-                <button class="btn-flat">MORE</button>
-                <button id="btn-resetSearch" class="btn-flat">RESET</button>
+    <div id="loader" class="center">
+      <div id="brand" style="margin-top:300px;">
+        <img src="Logo.PNG" alt="" style="padding-top:40%;">
+        <h1>We've got the Swag!</h1>
+
+      </div>
+    </div>
+
+        <div id="map"></div>
+        <div id="search">
+            <div class="search--inner">
+                <input id="input" type="text" name="" placeholder="Search..." value="">
+                <div class="search--more">
+                    <button class="btn-flat">MORE</button>
+                    <button id="btn-resetSearch" class="btn-flat">RESET</button>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="range--div" class="range-field">
-        <input type="range" id="range" min="23" max="29" value="23" />
-        <span id="range--value">HEUTE</span>
-    </div>
+        <div id="range--div" class="range-field">
+            <input type="range" id="range" min="23" max="29" value="23" />
+            <span id="range--value">HEUTE</span>
+        </div>
 
-    <a class="btn-floating btn-large waves-effect waves-light blue" id="fab"><i id="fab--i" class="material-icons">search</i></a>
+        <a class="btn-floating btn-large waves-effect waves-light blue" id="fab"><i id="fab--i" class="material-icons">search</i></a>
+
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

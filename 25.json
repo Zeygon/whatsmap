@@ -43,10 +43,11 @@
             "coordinates": [50.78309, 6.09693],
             "description": "The Carolus Thermen Bad Aachen with their four worlds of relaxation offer unique possibilities of letting yourself go for a few hours.",
             "opening": "Daily &bull; 9.00 AM to 11.00 PM",
+            "address": "Passstraße 9",
             "phone": "0241 182740",
             "email": "mail@carolus-thermen.de",
             "url": " www.carolus-thermen.de",
-            "tags": ["#adventure", "#sport", "#chilling"],
+            "tags": ["#sport", "#chilling"],
             "color": "",
             "typ": "event"
         },
@@ -62,6 +63,6 @@
             "tags" : ["#sport"],
             "color" : "",
             "typ" : "activity"
-        }       
+        }
     ]
 }

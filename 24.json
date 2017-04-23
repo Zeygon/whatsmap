@@ -50,6 +50,20 @@
             "tags" : ["#sport"],
             "color" : "",
             "typ" : "activity"
+        },
+        {
+            "name" : "Inclusion by technique",
+            "opening" : "April 24 &bull, 7.30 PM - 9.00 PM",
+            "coordinates" : [49.042653, 12.086079],
+            "description" : "Lecture about problems in the rapidly growing world of science and a look into the countless different solution approaches",
+            "address" : "Thon-Dittmer-Palais, Haidplatz 8, 93047 Regensburg",
+            "phone" : "0941 507-2433",
+            "email" : "service.vhs@regensburg.de",
+            "url" : "www.oth-regensburg.de",
+            "tags" : ["#education","#politics","#science"],
+            "color" : "",
+            "typ" : "event"
         }
+
     ]
 }

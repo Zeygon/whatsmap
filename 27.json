@@ -74,7 +74,7 @@
             "phone": "0241 182740",
             "email": "mail@carolus-thermen.de",
             "url": " www.carolus-thermen.de",
-            "tags": ["#adventure", "#sport","#chilling"],
+            "tags": ["#sport","#chilling"],
             "color": "",
             "typ": "event"
         },
@@ -87,7 +87,7 @@
             "phone": "0241 161688",
             "email": "theather@dasda.de",
             "url": " www.dasda.de",
-            "tags": ["#social", "#escalation","#entertainment"],
+            "tags": ["#social", "#entertainment"],
             "color": "",
             "typ": "event"
         },
@@ -112,7 +112,7 @@
             "address": "Blondelstraße 7",
             "email": "info@cineplex.de",
             "url": " www.cineplex.de",
-            "tags": ["#entertainment", "#escalation"],
+            "tags": ["#entertainment"],
             "color": "",
             "typ": "event"
         },

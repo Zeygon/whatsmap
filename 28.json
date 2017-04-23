@@ -48,13 +48,13 @@
             "phone": "0241 182740",
             "email": "mail@carolus-thermen.de",
             "url": " www.carolus-thermen.de",
-            "tags": ["#adventure", "#sport","#chilling"],
+            "tags": ["#sport","#chilling"],
             "color": "",
             "typ": "event"
         },
         {
-            "name" : "US Car Convention",  
-            "opening" : "Every last friday in Month, 6.00pm",      
+            "name" : "US Car Convention",
+            "opening" : "Every last friday in Month, 6.00pm",
             "coordinates" : [49.013360, 12.154657 ],
             "description" : "The US Car Convention takes place every last friday of month, starting at 6pm, entrance is free! Well-being concerning food is guaranteed too. For group registrations please contact Mr. Karl: 0171/5355575",
             "address" : "Straubinger Str. 62, 93055 Regensburg",

@@ -22,7 +22,7 @@ $.getJSON('marker.json', function (data) {
 
 function get_color(tag) {
     switch (tag) {
-        case '#escalate':
+        case '#escalation':
             return 'blue';
         case '#party':
             return 'red';
@@ -40,9 +40,9 @@ function get_color(tag) {
             return 'orange';
         case '#education':
             return 'purple';
-        case '#socially':
+        case '#social':
             return 'navy';
-        case '#lecture':
+        case '#talk':
             return 'aqua';
         default:
             return 'black';

@@ -18,13 +18,13 @@
             "opening": "tuesday 04-25-2017, 11 pm - 3 am",
             "coordinates": [49.016060,12.096698],
             "description": "home is where your heart beats…Welcome to town to all new students.- open: 23 – 03 h, - beats by mack, - first 50 shots for free, - kneitinger beats pils 2,50, - prosecco ice 3,00",
-            "address": "St.-Peters-Weg 15"
+            "address": "St.-Peters-Weg 15",
             "phone": "",
             "email": "info@beats-club.de",
             "url": "www.beats-club.de",
             "tags": ["#escalation", "#party", "#music"],
             "color": "",
-            "typ": "event"
+            "typ": "event",
         },
         { 
             "name": "LaserTag Regensburg",
@@ -37,7 +37,7 @@
             "url": "www.lasertag-deutschland.com",
             "tags": ["#escalation", "#action", "#sport"],
             "color": "",
-            "typ": "activity"     
+            "typ": "activity",     
         },
         { 
             "name": "Sailplane",
@@ -63,7 +63,7 @@
             "url": "www.aelf-re.bayern.de",
             "tags": ["#kids", "#adventure", "#nature"],
             "color": "",
-            "typ": "event"     
+            "typ": "event",     
         },
         { 
             "name": "Naturkundemuseum Ostbayern",
@@ -76,7 +76,7 @@
             "url": "www.nmo-regensburg.de",
             "tags": ["#kids", "#adventure", "#nature"],
             "color": "",
-            "typ": "event"     
+            "typ": "event",     
         },
         { 
             "name": "How resistent is our infrastructure against terrorist attacks, cyber attacks and other risks?",

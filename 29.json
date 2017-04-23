@@ -50,6 +50,19 @@
             "tags" : ["#sport"],
             "color" : "",
             "typ" : "activity"
+        },
+        {
+            "name" : "Les Infants Terribles (opera)",
+            "opening" : "Saturday &bull, April 24, 7.30 PM",
+            "coordinates" : [49.019129, 12.089759],
+            "description" : "Dance Opera by Philip Glass. Director Yuki Mori choreographed and staged a project between dance and music theater with the opera 'Les Enfants Terribles'.",
+            "address" : "Theater Regensburg - Bismarckplatz 7 93047 Regensburg",
+            "phone" : "0941 5072424",
+            "email" : "karten@theaterregensburg.de",
+            "url" : "https://www.theater-regensburg.de",
+            "tags" : ["#opera","#culture"],
+            "color" : "",
+            "typ" : "event"
         }
     ]
 }

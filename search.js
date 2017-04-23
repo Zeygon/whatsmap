@@ -80,7 +80,7 @@ function searchPoints(searchString) {
         }
     }
 
-    if (searchString.includes('aachen')) {
+    if (searchString.includes('aachen') || searchString.includes('Aachen')) {
         map.setView([50.776, 6.082], 13);
         if (searchCount == 0) {
             $searchOverlay.fadeOut(500);

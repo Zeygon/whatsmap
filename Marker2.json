@@ -11,7 +11,7 @@
             "url": "www.franz-aachen.de",
             "tags": ["#talk", "#education", "#socially"],
             "color": "",
-            "typ": "event",
+            "typ": "event"
         },
         { 
             "name": "Uni Opening",
@@ -24,7 +24,7 @@
             "url": "www.beats-club.de",
             "tags": ["#escalation", "#party", "#music"],
             "color": "",
-            "typ": "event",
+            "typ": "event"
         },
         { 
             "name": "LaserTag Regensburg",
@@ -37,7 +37,7 @@
             "url": "www.lasertag-deutschland.com",
             "tags": ["#escalation", "#action", "#sport"],
             "color": "",
-            "typ": "activity",     
+            "typ": "activity"     
         },
         { 
             "name": "Sailplane",
@@ -50,7 +50,7 @@
             "url": "www.luftsportverein-regensburg.de",
             "tags": ["#escalation", "#adventure", "#sport"],
             "color": "",
-            "typ": "activity", 
+            "typ": "activity" 
         },
         { 
             "name": "discover the spring wood – for families with children over 5 years",
@@ -63,7 +63,7 @@
             "url": "www.aelf-re.bayern.de",
             "tags": ["#kids", "#adventure", "#nature"],
             "color": "",
-            "typ": "event",     
+            "typ": "event"    
         },
         { 
             "name": "Naturkundemuseum Ostbayern",
@@ -76,7 +76,7 @@
             "url": "www.nmo-regensburg.de",
             "tags": ["#kids", "#adventure", "#nature"],
             "color": "",
-            "typ": "event",     
+            "typ": "activity"     
         },
         { 
             "name": "How resistent is our infrastructure against terrorist attacks, cyber attacks and other risks?",

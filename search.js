@@ -6,7 +6,7 @@ var $search = $('#input');
 var $fabi = $('#fab--i');
 var $input = $('#input');
 var $rangeslider = $('#range');
-var $btnMore = $('btn-more');
+var $btnMore = $('#btn-more');
 var currentDay = "23";
 
 var search_points = L.layerGroup();
@@ -62,6 +62,17 @@ function removeAllLayers() {
     map.removeLayer(p29);
 }
 
+var bMore = false;
+$btnMore.click(function(e) {
+    if (bMore) {
+        $(".more_tags").hide();
+        bMore = false;
+    } else {
+        $(".more_tags").show();
+        bMore = true;
+    }
+});
+
 var b = false;
 $searchTrigger.click(function (e) {
     if (b) {
@@ -78,7 +89,6 @@ $searchTrigger.click(function (e) {
 
         b = true;
     }
-
 });
 
 $searchReset.click(function (e) {

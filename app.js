@@ -115,7 +115,7 @@ function get_color(tag) {
         case '#education':
             return 'purple';
         case '#social':
-            return 'navy';
+            return 'indigo';
         case '#talk':
             return 'teal';
         default:

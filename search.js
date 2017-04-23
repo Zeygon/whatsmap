@@ -11,7 +11,7 @@ var currentDay = 23;
 var search_points = L.layerGroup();
 //var allPoints;
 
-$rangeslider.on("change", function () {
+$rangeslider.on("input", function () {
     getCorrectLayer(this.value);
     currentDay = this.value;
 });

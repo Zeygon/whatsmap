@@ -1,19 +1,6 @@
 {
    "marker": [
-       {
-            "name": "Hackaburg 2017",
-            "opening": "04-21-2017, 3 pm - 04.23.2017, 5 pm",
-            "coordinates": [49.003514,12.095027],
-            "description": "Pitch your idea at first. Create a team. Hack!",
-            "address": "Seybothstraße 2",
-            "phone": "0941 9431101",
-            "email": "",
-            "url": "www.hackaburg.de",
-            "tags": ["#adventure", "#education", "#socially"],
-            "color": "",
-            "typ": "event"
-        },
-        { 
+       { 
             "name": "Ohrange",
             "opening": "thursday 04-27-2017, 8 pm",
             "coordinates": [49.020314,12.100412],
@@ -40,19 +27,6 @@
             "typ": "event"
         },
         { 
-            "name": "Uni Opening",
-            "opening": "tuesday 04-25-2017, 11 pm - 3 am",
-            "coordinates": [49.016060,12.096698],
-            "description": "home is where your heart beats…Welcome to town to all new students.- open: 23 – 03 h, - beats by mack, - first 50 shots for free, - kneitinger beats pils 2,50, - prosecco ice 3,00",
-            "address": "St.-Peters-Weg 15",
-            "phone": "",
-            "email": "info@beats-club.de",
-            "url": "www.beats-club.de",
-            "tags": ["#party", "#music"],
-            "color": "",
-            "typ": "event"
-        },
-        { 
             "name": "LaserTag Regensburg",
             "opening": "10 am – 12 pm daily",
             "coordinates": [48.996385,12.120117],
@@ -64,32 +38,6 @@
             "tags": ["#action", "#sport"],
             "color": "",
             "typ": "activity"     
-        },
-        { 
-            "name": "Sailplane",
-            "opening": "saturday, sunday 09 am - 6 pm",
-            "coordinates": [49.054912,12.076534],
-            "description": "You want to fly over Regensburg with a sailplane? Contact us per mail.",
-            "address": "Eichendorffstr. 42, 93138 Lappendorf",
-            "phone": "094537244",
-            "email": "mitflug@luftsportverein-regensburg.de",
-            "url": "www.luftsportverein-regensburg.de",
-            "tags": ["#escalation", "#adventure", "#sport"],
-            "color": "",
-            "typ": "activity" 
-        },
-        { 
-            "name": "discover the spring wood – for families with children over 5 years",
-            "opening": "friday 04-28-2017, 3pm",
-            "coordinates": [49.004340,12.022056],
-            "description": " Let’s go outside in spring! We will explore the nature together. Registration: KEB-FamilienBildung & MEHR",
-            "address": "Rieglinger Höhe 1",
-            "phone": "0941 5972253",
-            "email": "familienbildung.und.mehr@keb-regensburg-stadt.de",
-            "url": "www.aelf-re.bayern.de",
-            "tags": ["#kids", "#adventure", "#nature"],
-            "color": "",
-            "typ": "event"    
         },
         { 
             "name": "Naturkunde-museum Ostbayern",

@@ -5,9 +5,16 @@ var $searchTrigger = $('#fab');
 var $search = $('#input');
 var $fabi = $('#fab--i');
 var $input = $('#input');
+var $rangeslider = $('#range');
 
 var search_points = L.layerGroup();
 var allPoints;
+
+$rangeslider.on("change", function() {
+    for(var i=0; allPoints.marker.length; i++) {
+        alert(allPoints.marker[i].name);
+    }
+});
 
 var b = false;
 $searchTrigger.click(function (e) {

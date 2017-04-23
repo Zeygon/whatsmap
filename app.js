@@ -133,10 +133,7 @@ var rangeSlider = function () {
         value.each(function () {
             var value = $(this).prev().attr('value');
             if (value === "23") {
-                $(this).html("HEUTE");
-
-            } else if (value === "24") {
-                $(this).html("MORGEN");
+                $(this).html("TODAY");
 
             } else {
 
@@ -146,11 +143,7 @@ var rangeSlider = function () {
 
         range.on('input', function () {
             if (this.value === "23") {
-                $(this).next(value).html("HEUTE");
-
-            } else if (this.value === "24") {
-                $(this).next(value).html("MORGEN");
-
+                $(this).next(value).html("TODAY");
             } else {
 
                 $(this).next(value).html(this.value + ". April");

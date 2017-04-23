@@ -48,13 +48,13 @@
             "phone": "0241 182740",
             "email": "mail@carolus-thermen.de",
             "url": " www.carolus-thermen.de",
-            "tags": ["#adventure", "#sport","#chilling"],
+            "tags": ["#sport","#chilling"],
             "color": "",
             "typ": "event"
         },
         {
-            "name" : "US Car Convention",  
-            "opening" : "Every last friday in Month, 6.00pm",      
+            "name" : "US Car Convention",
+            "opening" : "Every last friday in Month, 6.00pm",
             "coordinates" : [49.013360, 12.154657 ],
             "description" : "The US Car Convention takes place every last friday of month, starting at 6pm, entrance is free! Well-being concerning food is guaranteed too. For group registrations please contact Mr. Karl: 0171/5355575",
             "address" : "Straubinger Str. 62, 93055 Regensburg",
@@ -67,16 +67,29 @@
         },
         {
             "name" : "Indoor Climbing Wall",
-            "opening" : "Mo: 10.00am - 11.00pm, Tue: 10.00am - 11.00pm, We: 10.00 - 11.00pm, Thu: 09.00 - 11.00, Fr: 10.00am - 11.00pm, Sa+So: 10.00am - 10.00pm",
+            "opening" : "Monday to Wednesday &bull; 10.00 AM - 11.00 PM | Thursday &bull; 9.00 AM - 11.00 PM | Friday &bull; 10.00am - 11.00pm | Saturday to Sunday &bull: 10.00 AM - 10.00 PM",
             "coordinates" : [49.042653, 12.086079],
             "description" : "The DAV Kletterzentrum Regensburg offers around ca. 2300 sq m climbing space in total (1.400 sq m indoor & 900 sq m outdoors), climbing-routes from 3rd to 10th skilllevel and wall-height of 14,50m",
             "address" : "Am Silbergarten 6, 93138 Lappersdorf/Kareth",
-            "phone" : "0941/28005085",
+            "phone" : "0941 28005085",
             "email" : "service@kletterzentrum-regensburg.de",
             "url" : "http://www.kletterzentrum-regensburg.de/",
             "tags" : ["#sport"],
             "color" : "",
             "typ" : "activity"
+        },
+        {
+            "name" : "Nacht.Schafft.Wissen 2017 - OTH Regensburg",
+            "opening" : "Friday, April 28, 8.00 PM - 12AM",
+            "coordinates" : [49.042653, 12.086079],
+            "description" : "Open doors at OTH. Robots, 3D-scans, IT for cars,high voltage, racing cars ... the OTH Regensburg has a lot to offer. Discover OTH and its laboratories!",
+            "address" : "Galgenbergstraße 24, 93053 Regensburg",
+            "phone" : "0941 94302",
+            "email" : "poststelle@oth-regensburg.de",
+            "url" : "www.oth-regensburg.de",
+            "tags" : ["#education"],
+            "color" : "",
+            "typ" : "event"
         }
     ]
 }
